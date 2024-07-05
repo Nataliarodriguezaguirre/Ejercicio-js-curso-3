@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+
+    <main class="container">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ingresa tu peso">
+        <br>
+        <label for="estatura">Estatura (m):</label>
+        <input type="number" id="estatura" step="0.01" placeholder="Ingresa tu estatura">
+        <br>
+        <button onclick="imc()" class="button">Calcular IMC</button>
+        <p id="resultado"></p>
+    </main>
+
+
+
+    <main class="container">
+        <label for="factorial">Numero:</label>
+        <input type="number" id="factorial" placeholder="Ingresa un numero para calcular el factorial">
+        <br>
+        <button onclick="fact()" class="button">Calcular Factorial</button>
+        <p id="resultado2"></p>
+    </main>
+
+
+
+    <main class="container">
+        <label for="dolares">Valor a convertir:</label>
+        <input type="number" id="dolares" placeholder="Ingresa un numero en dolares para pasar a pesos colombianos">
+        <br>
+        <button onclick="dollars()" class="button">Calcular Pesos</button>
+        <p id="resultado3"></p>
+    </main>
+
+
+
+
+    <main class="container">
+        <label for="altura">ALTURA:</label>
+        <input type="number" id="altura" placeholder="Ingresa tu altura">
+        <br>
+        <label for="estatura">Anchura:</label>
+        <input type="number" id="anchura" step="0.01" placeholder="Ingresa tu anchura">
+        <br>
+        <button onclick="calcularAreaYPerimetroRectangular()" class="button">Calcular Area y perimetro</button>
+        <p id="resultado4"></p>
+    </main>
+
+
+
+    <main class="container">
+        <label for="radio">Introduzca radio:</label>
+        <input type="number" id="radio" placeholder="ingresa el valor del radio">
+        <br>
+        <button onclick="calcularAreaYPerimetroCircular()" class="button">Calcular area y perimetro circular</button>
+        <p id="resultado5"></p>
+    </main>
+
+
+    
+    <main class="container">
+        <label for="numerox">Introduzca numero para ver la tabla:</label>
+        <input type="number" id="numerox" placeholder="ingresa el valor">
+        <br>
+        <button onclick="mostrarTablaDeMultiplicar()" class="button">ver su tabla de multiplicar</button>
+        <textarea id="resultado6"></textarea>
+    </main>
+      <script src="app.js"></script>
+</body>
+</html>
